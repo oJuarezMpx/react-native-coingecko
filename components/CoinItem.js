@@ -6,6 +6,7 @@ const CoinItem = ({ coin }) => {
         <View style={styles.containerItem}>
             <Image style={styles.imagen} source={{uri: coin.image}} />
             <Text style={styles.nombreMoneda}>{coin.name}</Text>
+            <Text style={styles.textSymbol}>{coin.symbol}</Text>
             <Text style={styles.nombreMoneda}>1000</Text>
         </View>
     )
@@ -27,6 +28,9 @@ const styles = StyleSheet.create({
     imagen: {
         width: 30,
         height: 30
+    },
+    textSymbol: {
+        color: "#434343"
     }
 });
 
